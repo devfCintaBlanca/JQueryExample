@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<style>
+		#book{
+			width: 100%;
+			height: 50px;
+			background-color: red;
+			display: none;
+		}
+		header{
+			width: 100%;
+			height: 100px;
+			background-color: green
+		}
+		section{
+			background-color: blue;
+			width: 100%;
+			height: 600px;
+		}
+	</style>
+</head>
+<body>
+	<button class="clickme">dame click</button>
+	<header>
+		
+	</header>
+	<aside id="book">
+		<form action="">
+			<input type="text">
+			<input type="submit">
+		</form>
+	</aside>
+	<section>
+		<button class="clickme">
+			dame click
+		</button>
+	</section>
+	<script>
+		$( ".clickme" ).click(function() {
+		  $( "#book" ).slideToggle( 500, function() {
+		  });
+		});
+	</script>
+</body>
+</html>
